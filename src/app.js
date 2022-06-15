@@ -12,12 +12,12 @@ app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'))
 
-//middleweres
+//middlewares
 app.use(morgan('dev'));
 app.use(myConnection(mysql,{
     host: 'localhost',
     user: 'root',
-    password: 'contraseña',
+    password: '',
     port: 3306,
     database: 'crudnodejsmysql'
 },'single'));
