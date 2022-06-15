@@ -14,4 +14,10 @@ controller.list = (req, res) => {
       });
     });
   };
+
+  controller.save = (req, res) => {
+    console.log(req.body);
+    res.send('works');
+  };
+
 module.exports = controller;
